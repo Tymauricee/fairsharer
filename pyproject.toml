@@ -1,0 +1,21 @@
+[project]
+name = "fairsharer"
+version = "0.1.0"
+description = "Portfolio Exercise 06 - Fair Sharer Algorithm"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.1",
+]
+
+# WICHTIG: Damit Python den 'src' Ordner findet
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
